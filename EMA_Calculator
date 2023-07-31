@@ -1,0 +1,12 @@
+import random
+P = []
+for i in range(5):
+    i = random.randint(11,20)
+    P.append(i)
+print(P)
+EMA = []
+EMA.append(P[0])
+for i in range (5):
+    x = (1/3)*P[i] + (2/3)*EMA[i-1]
+    EMA.append(x)
+print(EMA)
