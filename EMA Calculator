@@ -20,6 +20,7 @@ x = np.array(range(1,31))
 Y1 = np.array(P)
 Y2 = np.array(EMA)
 
+#Plot both lines on the same axis for easier comparison
 plt.plot(x, Y1, label = 'Price')
 plt.plot(x, Y2, label = 'EMA')
 plt.show()
